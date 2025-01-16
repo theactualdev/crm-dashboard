@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://schoolcrm-dashboard.vercel.app/logo.png",
-        width: 800,
-        height: 600,
+        width: 500,
+        height: 500,
         alt: "School CRM Dashboard",
       },
     ],
@@ -46,6 +47,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
