@@ -4,7 +4,6 @@ import { data } from "./data/AttendanceData";
 import {
   BarChart,
   Bar,
-  Rectangle,
   XAxis,
   YAxis,
   CartesianGrid,

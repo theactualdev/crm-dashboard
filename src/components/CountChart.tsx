@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { data } from "./data/RadialChartData";
-import { RadialBarChart, RadialBar, Legend, ResponsiveContainer } from "recharts";
+import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
 
 const CountChart = () => {
     return(
