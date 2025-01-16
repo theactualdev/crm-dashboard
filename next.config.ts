@@ -16,9 +16,14 @@ module.exports = {
     return [
       {
         source: '/',
-        destination: '/home', // Change to your default route
-        permanent: false, // Use true for a 301 redirect
+        destination: '/admin',
+        permanent: true,
       },
+      {
+        source: '/home',
+        destination: '/admin',
+        permanent: true,
+      }
     ];
   },
   images: {
