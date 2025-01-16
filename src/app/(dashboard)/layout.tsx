@@ -10,14 +10,14 @@ export default function DashboardLayout({
   }>) {
     return (
         <div className="h-screen flex">
-          <div className="l w-1/6 md:w-[8%] lg:w-1/6 xl:w-1/6 p-4 overflow-y-scroll">
+          <div className="l w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] p-4 overflow-y-scroll">
             <Link href="/" className="flex items-center justify-center lg:justify-start gap-2">
                 <Image src="/logo.png" alt="Logo" height={32} width={32} />
-                <span className="hidden lg:block">SchooLama</span>
+                <span className="hidden lg:block font-bold">SchooLama</span>
             </Link>
             <Menu />
           </div>
-          <div className="r w-5/6 md:w-[96%] lg:w-[84%] xl:w-5/6 bg-[#F7F8FA] overflow-scroll">
+          <div className="r w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll flex flex-col">
             <Navbar />
             { children }
           </div>
