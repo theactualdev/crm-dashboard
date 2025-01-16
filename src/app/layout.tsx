@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://schoolcrm-dashboard.vercel.app/logo.png",
-        width: 500,
-        height: 500,
+        width: 200,
+        height: 200,
         alt: "School CRM Dashboard",
       },
     ],
