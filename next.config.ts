@@ -11,16 +11,23 @@ const nextConfig: NextConfig = {
 
 // next.config.js
 module.exports = {
+  reactStrictMode: true,
   async redirects() {
     return [
       {
         source: '/',
-        destination: '/admin',
-        permanent: true, // Use `true` for permanent redirect (301), `false` for temporary (302)
+        destination: '/home', // Change to your default route
+        permanent: false, // Use true for a 301 redirect
       },
     ];
   },
+  images: {
+    domains: ['https://schoolcrm-dashboard.vercel.app/logo.png'], // Add allowed domains for optimized images
+  },
+  env: {
+    SITE_NAME: 'CRM Dashboard',
+    SITE_URL: 'https://schoolcrm-dashboard.vercel.app/',
+  },
 };
-
 
 export default nextConfig;

@@ -10,6 +10,31 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "CRM Dashboard",
   description: "Built with sweat by theactualdev",
+  keywords: "CRM, Dashboard, Management, Business",
+  authors: [{name: "theactualdev", url: "https://theactualdev.me"}],
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
+  openGraph: {
+    type: "website",
+    url: "https://schoolcrm-dashboard.vercel.app/",
+    title: "School CRM Dashboard",
+    description: "Built with sweat by theactualdev",
+    siteName: "School CRM Dashboard",
+    images: [
+      {
+        url: "https://schoolcrm-dashboard.vercel.app/logo.png",
+        width: 800,
+        height: 600,
+        alt: "School CRM Dashboard",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@theactualdev",
+    creator: "@theactualdev",
+    images: "https://schoolcrm-dashboard.vercel.app/logo.png",
+  },
 };
 
 export default function RootLayout({
